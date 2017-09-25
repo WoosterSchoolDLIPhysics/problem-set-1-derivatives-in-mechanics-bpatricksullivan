@@ -62,4 +62,6 @@ for it in arange(len(t)):
     plot([0,ax[it]/10],[0,ay[it]/10],'r-o')
     axis('equal'); xlabel(r'$v_x$'); ylabel(r'$v_y$')
     text(1.1*ax[it]/10,1.1*ay[it]/10,r'$\vec{a}$',color='red',size=15)
+    grid()
+    savefig('xva_frame_%03d.png' % it)
     pause(.001)
